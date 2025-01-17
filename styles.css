@@ -66,7 +66,7 @@ form.login-box1-content {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 /* ============================= */
@@ -76,7 +76,7 @@ form.login-box1-content {
     flex: 1; /* Allow content to expand & push footer to bottom */
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Center items vertically within .login-content */
+    /* justify-content: space-between; Center items vertically within .login-content */
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.29);
     background-color: #ffffff;
@@ -91,7 +91,7 @@ form.login-box1-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 1rem; /* Some spacing below header */
+    /* margin-bottom: 1rem; Some spacing below header */
 }
 
 .header-logo {
@@ -122,8 +122,6 @@ form.login-box1-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
     flex:1;
 }
 
@@ -184,12 +182,10 @@ form.login-box1-content {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 0.5rem;
 }
 
 .login-footer .forgot-password {
     width: 100%;
-    margin-top: 1rem;
     text-align: center;
 }
 
@@ -213,7 +209,6 @@ form.login-box1-content {
     border: none;
     border-radius: 3.3px;
     cursor: pointer;
-    margin-top: 1rem; /* Space above the button */
 }
 
 /* Hover/Focus states for login button */
@@ -229,12 +224,10 @@ form.login-box1-content {
     font-size: 0.8rem;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
     margin-top: auto; /* Ensures it sits at bottom if needed */
     color: #ffffff;
     background-color: #5e6b75;
     justify-content: center;
-    padding: 0.5rem 0; /* Some padding for the security bar */
 }
 
 
