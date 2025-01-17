@@ -484,7 +484,17 @@ form.login-box1-content {
 .box-row{
     max-width: 1440px;
 }
+.box3{
+    transform: translate(0%, 0%);
+}
 
+.circular-bg{
+    width: 30rem;
+    height: 30rem;
+}
+.image1 img {
+    left:4.1rem;
+}
 }
 
 @media (min-width: 1920px) {
