@@ -459,6 +459,24 @@ form.login-box1-content {
     .image1, .image2 {
         max-width: 100%;
     }
+
+    .fixed-icon {
+        position: fixed; /* Keeps the icon in the viewport corner */
+        bottom: 20px; /* Distance from the bottom */
+        right: 20px; /* Distance from the right */
+        background-color: #ffffff; /* Background color for visibility */
+        color: #333333; /* Icon color */
+        padding: 10px; /* Padding inside the icon */
+        border-radius: 50%; /* Perfectly circular shape */
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        font-size: 1.5rem; /* Icon size */
+        z-index: 1000; /* Stays on top of other elements */
+        display: flex; /* Ensure proper alignment */
+        justify-content: center; /* Center icon horizontally */
+        align-items: center; /* Center icon vertically */
+        width: 48px; /* Set explicit width for circular appearance */
+        height: 48px; /* Match height to width */
+      }
 }
 
 @media (min-width: 1440px) {
