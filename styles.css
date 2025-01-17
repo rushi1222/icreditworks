@@ -9,9 +9,13 @@
 
 html, body {
     width: 100%;
-    height: 100vh;
+    height: 100svh;
     font-family: 'Montserrat', sans-serif;
     background-color: #f5f5f5;
+    background: linear-gradient(to bottom, #f90c0c, #05ff2a8e);
+
+    
+
 }
 .scale-container {
     /* width: 2000;        Your “fixed” design width */
@@ -25,7 +29,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
+    height: 100svh; /* Full viewport height */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -50,7 +54,7 @@ html, body {
     min-width: 323px;
     margin: 0 auto;
     text-align: center;
-    height: 100vh;           /* Fill the full viewport height (mobile) */
+    height: 100svh;           /* Fill the full viewport height (mobile) */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
@@ -63,7 +67,7 @@ html, body {
 /*          Login Form           */
 /* ============================= */
 form.login-box1-content {
-    height: 100vh;
+    height: 100svh;
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
