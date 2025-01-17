@@ -247,6 +247,7 @@ form.login-box1-content {
 /* ============================= */
 /* Desktop View (≥900px) */
 @media (min-width: 1280px) {
+
     .container {
         background-image: url("https://assetsuat.icreditworks.com/public/providerportal/assets/images/loginBgNew.svg");
         background-size: cover;
@@ -257,14 +258,16 @@ form.login-box1-content {
     }
 
     .box-row {
-        justify-content: space-around; /* Space around the boxes */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
         align-items: center;
-        max-width: 1200px; /* Prevent the row from being too wide */
+        flex: 1 1 0%;
         width: 100%;
+        max-width: 1280px;
         overflow: hidden; /* Prevent overflow */
-        height: 100vh; /* Full viewport height to prevent vertical overflow */
-        position: relative;
-        padding: 0%;
+        position: relative; /* Context for absolute positioning */
+        height: 100vh;
     }
 
     .hidden-mobile {
@@ -313,40 +316,42 @@ form.login-box1-content {
     .login-footer .login-security {
         margin-top: 1.5rem;
     }
-    .box2{
-        flex:1;
-        flex-shrink: 0; /* Prevent box2 from shrinking */
+    .box2 {
+        width: 250px; /* Fixed width */
+        height: auto; /* Adjust height as needed */
         justify-content: center;
         align-items: center;
-        padding-left: 2.5rem;
-        color:#f5f5f5;
+        color: #f5f5f5;
         font-family: 'Montserrat', sans-serif;
-
+        position: absolute; /* Decouple from flex layout */
+        top: 50%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-75%, -50%); /* Adjust for exact centering */
+        z-index: 2; /* Ensure it stays above other elements */
     }
     .box2-content-1 {
-        padding-left: 3.0rem;
         color: #f5f5f5;
         font-family: 'Montserrat', sans-serif;
         font-size: 2rem; /* Typical h2 size */
         line-height: 1.3; /* Adjust for spacing between lines */
         font-weight: 1000; /* Medium font weight */
-        font-style: bold;
     }
     .box2-content-2{
-        padding-left: 3.0rem;
         color:#f5f5f5;
         font-family: 'Montserrat', sans-serif;
     }
 
-    .box3{
-        flex:3; 
+    .box3 {
+        flex: 0 0 800px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 30%; /* Ensure it doesn't exceed container */
+        width: 30%;
         box-sizing: border-box;
-        position: relative;
+        position: relative; /* Normal flex behavior */
+        z-index: 1; /* Behind Box 2 */
+        transform: translate(10%, 0%);
     }
 
     /* Image Containers */
@@ -387,14 +392,14 @@ form.login-box1-content {
     
     .circular-bg {
         position: absolute;
-        width: 35rem; /* Adjust size for larger circle */
-        height: 35rem; /* Match width for a perfect circle */
-        background-color: rgb(255, 255, 255); /* Circle color */
+        width: 30rem; /* Adjust size for larger circle */
+        height: 30rem; /* Match width for a perfect circle */
+        background-color: #F3F4F4; /* Circle color */
         border-radius: 50%; /* Make it a circle */
         transform: translate(-50%, -50%); /* Center the circle */
         z-index: 1; /* Behind other elements */
         pointer-events: none; /* Ignore mouse interactions */
-        left:7.5rem;
+        transform: translate(-20%, -50%);
         align-self: center;
 
     }
@@ -433,4 +438,39 @@ form.login-box1-content {
     .image1, .image2 {
         max-width: 100%;
     }
+}
+
+@media (min-width: 1440px) {
+
+.box-row{
+    max-width: 1440px;
+}
+
+}
+
+@media (min-width: 1619px) {
+.box-row{
+        max-width: 1920px;
+    }
+
+.box1 {
+    position: relative;
+    transform: translate(-30%, 0);
+}
+.box3{
+    transform: translate(-10%, 0%);
+}
+.circular-bg{
+    width:38rem;
+    height: 38rem;
+}
+.title-title{
+    left: 4rem;
+}
+.image1 img {
+    left: 4rem;
+}
+
+
+
 }

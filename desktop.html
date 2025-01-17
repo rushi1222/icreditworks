@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Encroachment</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: nowrap; /* Ensure no wrapping */
+      width: 100%; /* Full width of viewport */
+      max-width: 1200px; /* Limit container width */
+      height: 200px; /* Fixed height for testing */
+      border: 2px solid #333;
+      background-color: #e0e0e0;
+      position: relative; /* Allow overlap adjustments */
+    }
+
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1rem;
+      font-weight: bold;
+      color: white;
+      position: relative; /* For z-index control */
+    }
+
+    /* Box 1: Flexible size */
+    .box1 {
+      flex: 1; /* Equal proportion of space */
+      background-color: #ff5722;
+    }
+
+    /* Box 2: Fixed size, visually overlaps Box 3 */
+    .box2 {
+      flex: 0 0 250px; /* Fixed width of 250px */
+      background-color: #3f51b5;
+      z-index: 2; /* Ensures it stays above Box 3 */
+      margin-right: -50px; /* Overlaps into Box 3 without moving */
+    }
+
+    /* Box 3: Large size, encroaches on Box 2 */
+    .box3 {
+      flex: 3 0 800px; /* Grows significantly */
+      background-color: #4caf50;
+      z-index: 1; /* Behind Box 2 */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box box1">Box 1</div>
+    <div class="box box2">Box 2</div>
+    <div class="box box3">Box 3</div>
+  </div>
+</body>
+</html>
