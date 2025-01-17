@@ -14,7 +14,7 @@ html, body {
     background-color: #f5f5f5;
 }
 .scale-container {
-    width: 2000;        /* Your “fixed” design width */
+    /* width: 2000;        Your “fixed” design width */
     margin: 0 auto;       /* Center horizontally (optional) */
     transform-origin: 0 0;/* Scale from top-left corner */
   }
