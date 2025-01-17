@@ -396,7 +396,6 @@ form.login-box1-content {
 
     }
     .title{
-        font-size: 1.58rem;
         font-weight: 500;
         color: #333333;
         align-items: center;
@@ -407,20 +406,21 @@ form.login-box1-content {
         position: relative;
         z-index: 2;
         color: #333333;
-        left: 2.5rem;
+        left: 2.9rem;
+        font-size: 1.8rem;
+        top:1rem;
 
     }
     
     .circular-bg {
         position: absolute;
-        width: 30rem; /* Adjust size for larger circle */
-        height: 30rem; /* Match width for a perfect circle */
+        width: 27rem; /* Adjust size for larger circle */
+        height: 27rem; /* Match width for a perfect circle */
         background-color: #F3F4F4; /* Circle color */
         border-radius: 50%; /* Make it a circle */
-        transform: translate(-50%, -50%); /* Center the circle */
         z-index: 1; /* Behind other elements */
         pointer-events: none; /* Ignore mouse interactions */
-        transform: translate(-20%, -50%);
+        transform: translate(-10%, -50%);
         align-self: center;
 
     }
@@ -435,7 +435,7 @@ form.login-box1-content {
     .image1 img {
         width: 100%; /* Make image fit container width */
         height: auto; /* Maintain aspect ratio */
-        max-height: 20vh; /* Specific height for image1 */
+        max-height: 15vh; /* Specific height for image1 */
         object-fit: contain; /* Ensure the image content is fully visible */
         z-index: 2; /* Ensure it appears above other elements */
         position: relative;
@@ -446,12 +446,12 @@ form.login-box1-content {
     .image2 img {
         width: 100%; /* Make image fit container width */
         height: auto; /* Maintain aspect ratio */
-        max-height: 70vh; /* Larger height for image2 */
+        max-height: 80vh; /* Larger height for image2 */
         object-fit: contain; /* Ensure the image content is fully visible */
         align-items: center;
         z-index: 2; /* Ensure it appears above other elements */
         position: relative;
-        bottom: 6rem;
+        bottom: 5rem;
         
     }
 
