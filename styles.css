@@ -12,7 +12,6 @@ html, body {
     height: 100svh;
     font-family: 'Montserrat', sans-serif;
     background-color: #f5f5f5;
-    background: linear-gradient(to bottom, #f90c0c, #05ff2a8e);
 
     
 
@@ -167,6 +166,10 @@ form.login-box1-content {
     width: 100%;
     align-items: flex-start;
 }
+.password-wrapper {
+    position: relative;
+    width: 100%; /* Ensures the input and icon align properly */
+  }
 
 .login-footer .form-group .form-input {
     width: 100%;
@@ -176,7 +179,18 @@ form.login-box1-content {
     background-color: #fff;
     max-width: 323px;
     margin-bottom: 1rem; /* Space below each input */
+    height: 2.5rem; /* Adjust height as needed */
+    font-size: 1rem; /* Adjust font size as needed */
 }
+.password-icon {
+    position: absolute;
+    top: 40%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #aaa;
+    font-size: 1.25rem; /* Adjust size as needed */
+    pointer-events: none; /* Prevents clicking on the icon */
+  }
 
 .login-footer .form-input::placeholder {
     font-size: 16px;
@@ -195,6 +209,7 @@ form.login-box1-content {
 .login-footer .forgot-password {
     width: 100%;
     text-align: center;
+    margin-top: 2rem;
 }
 
 .login-footer .dont-remember-password {
@@ -217,6 +232,7 @@ form.login-box1-content {
     border: none;
     border-radius: 3.3px;
     cursor: pointer;
+    margin-top: 3rem;
 }
 
 /* Hover/Focus states for login button */
@@ -236,6 +252,7 @@ form.login-box1-content {
     color: #ffffff;
     background-color: #5e6b75;
     justify-content: center;
+    padding: 0.2rem;
 }
 
 
@@ -308,9 +325,9 @@ form.login-box1-content {
         margin-top: 1rem;
     }
 
-    .input-form{
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
+    .input-form {
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
     }
 
     .login-footer .login-button{
