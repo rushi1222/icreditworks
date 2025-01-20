@@ -1,0 +1,33 @@
+<div class="box">
+    <div class="box1">Box 1</div>
+    <div class="box2">Box 2</div>
+  </div>
+  
+  <style>
+  /* Parent flex container */
+  .box {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
+  }
+  
+  /* Box 1: Fixed height */
+  .box1 {
+    height: auto; /* Adjusts to content size */
+    flex-shrink: 0; /* Prevent shrinking */
+    margin: 1rem; /* Optional margin for spacing */
+    background-color: lightblue;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* Box 2: Takes remaining space */
+  .box2 {
+    flex: 1; /* Grow to fill the remaining space */
+    background-color: lightcoral;
+    text-align: center;
+    padding: 1rem;
+  }
+  </style>
+  
